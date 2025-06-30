@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/imagenes/siae-dashboard.png" alt="SIAE" width="150"/>
+  <img src="public/Imagenes/siae-dashboard.png" alt="SIAE" width="150"/>
 </p>
 
 # feat: Implementación inicial del sistema SIAE con módulos clave

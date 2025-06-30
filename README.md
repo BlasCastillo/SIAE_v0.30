@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://via.placeholder.com/150" alt="Logo del SIAE (placeholder)" width="150"/>
+  <img src="images/logo-siae.png" alt="Logo del SIAE (placeholder)" width="150"/>
 </p>
 
 # feat: Implementación inicial del sistema SIAE con módulos clave

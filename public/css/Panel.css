@@ -1,0 +1,283 @@
+/* MAIN */
+.main
+{
+    position: absolute;
+    width: 100%;
+/*     left: 240px; */
+    min-height: 100vh;
+    background: var(--secondary-color);
+    transition: 0.5s;
+
+}
+
+/* .main.active
+{
+    width: calc(100% - 60px);
+    left: 60px;
+} */
+
+/* BARRA SUPERIOR */
+.topbar
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.toggle
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.user
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* FIN BARRA SUPERIOR */
+
+/* CARD'S */
+
+.cardBox
+{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+
+.cardBox .cards
+{
+    position: relative;
+    background: var(--background-color);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .08);
+}
+
+.cardBox .cards .number
+{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--main-color);
+}
+
+.cardBox .cards .cardName
+{
+    color: var(--text-color);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.cardBox .cards .iconBx
+{
+    font-size: 3.5em;
+    color: var(--text-color);
+}
+
+.cardBox .cards:hover
+{
+    background: var(--main-color);
+    transition: 0.5s;
+}
+
+.cardBox .cards:hover .number,
+.cardBox .cards:hover .cardName,
+.cardBox .cards:hover .iconBx
+{
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+/* FIN CARD'S */
+
+
+/* CHARTS */
+
+.graphBox
+{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    min-height: 200px;
+}
+
+.graphBox .box
+{
+    position: relative;
+    background: var(--secondary-color);
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+/* CHARTS FIN */
+
+
+/* TABLE */
+.details
+{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+/*     margin-top: 10px; */
+}
+
+.details .recent
+{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--secondary-color);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.cardHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2
+{
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.Btn
+{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--main-color);
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.details table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td
+{
+    font-weight: 600;
+}
+
+.details .recent table tr
+{
+    color: var(--text-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recent table tr:last-child
+{
+    border-bottom: none;
+}
+
+.details .recent table tbody tr:hover
+{
+    background: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.details .recent table tr td
+{
+    padding: 10px;
+}
+/* FIN TABLE */
+
+/* TABLE2 */
+.recent2
+{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--secondary-color);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .08);
+    border-radius: 20px;
+}
+
+.recent2 .imgBx
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.recent2 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recent2 table tr td
+{
+    padding: 12px 10px;
+}
+
+.recent2 table tr td h4
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.recent2 table tr td h4 span
+{
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.recent2 table tr:hover {
+    background: var(--main-color);
+    color: var(--secondary-color);
+}
+/* FIN TABLE2 */

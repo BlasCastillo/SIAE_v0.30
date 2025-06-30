@@ -1,0 +1,51 @@
+/* Estilos para la vista de edición */
+.edit-category-link.active-permission-category {
+    background-color: #3490dc;
+    color: white;
+}
+
+.edit-category-link.inactive-permission-category {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.edit-category-link.warning-state {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-category-link.validating-state {
+    background-color: #34c759;
+    color: white;
+}
+
+/* Estilos para la vista de creación */
+.create-category-link.active-permission-category {
+    background-color: #3490dc;
+    color: white;
+}
+
+.create-category-link.inactive-permission-category {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.permissions-container {
+    display: none;
+}
+
+.permissions-container.show {
+    display: block;
+}
+
+.warning-icon {
+    color: #ffc107;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.validating-icon {
+    color: #34c759;
+    font-size: 18px;
+    margin-left: 10px;
+}

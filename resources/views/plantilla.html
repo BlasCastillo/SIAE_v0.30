@@ -1,0 +1,40 @@
+<x-app-layout>
+
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Lista de Aulas') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <div class="p-6">
+                    <!-- contenido -->
+                    <div class="form-group mb-4"></div>
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+    </div>
+</x-app-layout>
+
+@can('permiso')
+@endcan
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Para Aulas
+Route::put('aulas/{id}/activate', [AulasController::class, 'activate'])->name('aulas.activate');
+Route::get('/aulas', [AulasController::class, 'index'])->name('aulas.index');
+
+// Para Pnfs
+Route::put('pnfs/{id}/activate', [PnfsController::class, 'activate'])->name('pnfs.activate');
+Route::get('/pnfs', [PnfsController::class, 'index'])->name('pnfs.index');
+
+// Para trayectos
+Route::put('trayectos/{id}/activate', [TrayectosController::class, 'activate'])->name('trayectos.activate');
+Route::get('/trayectos', [TrayectosController::class, 'index'])->name('trayectos.index');
+
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
